@@ -1,0 +1,94 @@
+<!--------------------------------------------------------------
+ * Filename     : menu.html
+ * Web Designer : Muhammad Argi Nafisa
+ * Date         : 01-06-2020
+ * Email        : argiargi@upi.edu / arginafisa@gmail.com
+ * Deskripsi    : Tampilan halaman menu awal
+---------------------------------------------------------------->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<audio src="./assets/audio/menu.mp3" type="audio/mp3" autoplay loop></audio> <!-- Memulai musik menu -->
+	<!-- Menu Music = https://whitebataudio.com/downloads/dredd/ -->
+	<!-- Play Game Music = https://whitebataudio.com/downloads/underworld/ -->
+    <title>We Will Be The Winner!</title>
+	<style>
+		body{
+			background-color: #000000;
+			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			background-size: cover;
+  			-o-background-size: cover;
+		}
+
+		table{
+			background-color: #000000;
+		}
+
+		thead{
+			background-color: #000000;
+		}
+		hr{
+			height: 5px;
+			background-color: #149414;
+		}
+		th{
+			color: #149414;
+		}
+		td{
+			color: #149414;
+		}
+		
+	</style>
+  </head>
+  <body>
+
+	<div class="container">
+		<div class="jumbotron jumbotron-fluid" style="background-color: #000000;">
+  			<div class="container">
+    			<h1 class="display-4" align="center" style="color: #149414; font-family: Agency FB">EVADE THE</h1>
+				<h2 align="center" style="color: #149414;">██╗░░░██╗██╗██████╗░██╗░░░██╗░██████╗</h2>
+				<h2 align="center" style="color: #149414;">██║░░░██║██║██╔══██╗██║░░░██║██╔════╝</h2>
+				<h2 align="center" style="color: #149414;">╚██╗░██╔╝██║██████╔╝██║░░░██║╚█████╗░</h2>
+				<h2 align="center" style="color: #149414;">░╚████╔╝░██║██╔══██╗██║░░░██║░╚═══██╗</h2>
+				<h2 align="center" style="color: #149414;">░░╚██╔╝░░██║██║░░██║╚██████╔╝██████╔╝</h2>
+				<h2 align="center" style="color: #149414;">░░░╚═╝░░░╚═╝╚═╝░░╚═╝░╚═════╝░╚═════╝░</h2>
+  			</div>
+		</div>
+
+		<form class="form-inline mt-5" method="post" action="./controller/start.php"> <!-- Mengarahkan ke controller create.php -->
+  			<div class="form-group mx-sm-3 mb-2">
+    			<input type="text" class="form-control" placeholder="Username" name="username" style="background-color: #000000; color: #149414;">
+  			</div>
+  			<button type="submit" class="btn btn-success mb-2" style="background-color: #149414; color: #000000;">Play</button>
+		</form>
+
+		<table class="table">
+			<h2 style="color: #149414;" align="center">SCOREBOARD</h2>
+  			<thead class="thead">
+    			<tr>
+					<th scope="col">Rank</th>
+      				<th scope="col">User</th>
+      				<th scope="col">Score</th>
+    			</tr>
+  			</thead>
+  			<tbody>
+                TABLE_DATA
+  			</tbody>
+		</table>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
